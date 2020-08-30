@@ -273,3 +273,94 @@ audio {
     }
   }
 }
+
+
+
+@media only screen and (min-width: 319px) and (max-width: 767px) {
+  header {
+    h1 {
+      font-size: 1.8rem;
+      img {
+        width: 20px;
+      }
+    }
+    h2 {
+      font-size: 1.2rem;
+    }
+  }
+  ul li {
+    font-size: 0.85rem;
+    line-height: 5px;
+  }
+  .main {
+    flex-direction: column;
+    .bird_img {
+      width: 100%;
+    }
+    img {
+      width: 90%;
+      height: 50%;
+    }
+  }
+  audio {
+    margin: 0;
+    height: 25px;
+    max-width: 70vw;
+  }
+  .answer_section {
+    width: 100%;
+  }
+  .questions {
+    flex-direction: column-reverse;
+    &-block {
+      width: 80%;
+      font-size: 1.2rem;
+    }
+  }
+
+  .answer {
+    &_description {
+      width: 80%;
+      flex-direction: column;
+      h2 {
+        font-size: 1rem;
+      }
+      &_title {
+        margin: 15px 0;
+      }
+      &_text {
+        margin: 15px 0 20px;
+        font-size: 1rem;
+      }
+    }
+    &_image {
+      width: 100%;
+    }
+  }
+  .win_page h2 {
+    flex-direction: column;
+    font-size: 1.2rem;
+    img {
+      width: 70%;
+    }
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1019px) {
+  .answer {
+    &_description {
+      flex-direction: column;
+      width: 45%;
+    }
+    &_image {
+      width: 100%;
+    }
+  }
+  .win_page h2 {
+    flex-direction: column;
+    font-size: 2rem;
+    img {
+      width: 70%;
+    }
+  }
+}
