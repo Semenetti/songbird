@@ -3,6 +3,7 @@ const WebpackNotifierPlugin = require('webpack-notifier');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const HtmlWebpackRootPlugin = require('html-webpack-root-plugin');
+const CopyWebpackPlugin = require('copy-webpack-plugin');
 
 module.exports = {
   entry: './src/index.jsx',
@@ -46,7 +47,6 @@ module.exports = {
           outputPath: 'img',
         },
       },
-
     ],
   },
   plugins: [
@@ -60,5 +60,6 @@ module.exports = {
     new HtmlWebpackRootPlugin(),
     new CleanWebpackPlugin(),
     new WebpackNotifierPlugin(),
+    new CopyWebpackPlugin([{ from: 'src/assets', to: 'src/assets' }]),
   ],
 };
