@@ -51,7 +51,7 @@ module.exports = {
   },
   plugins: [
     new HtmlWebpackPlugin({
-      title: 'SongBird',
+      title: 'SongGuesser',
       favicon: './src/assets/img/mic.png',
       meta: {
         viewport: 'width=device-width, initial-scale=1, shrink-to-fit=no',
